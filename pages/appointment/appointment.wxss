@@ -1,0 +1,101 @@
+page{
+  background-color: #EBEBEB;
+  font-family: 微软雅黑;
+}
+.tips{
+  height: 1.5rem;
+  font-size: 0.8rem;
+  color: #919191;
+  margin-left: 0.2rem;
+  height: 2rem;
+  line-height: 2rem;
+}
+.content{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  padding: 0.3rem;
+  height: 4.2rem;
+  border-bottom: 1px solid #c1c1c1;
+}
+.content>image{
+  width: 5rem;
+  height: 3.5rem;
+  margin-left: 0.5rem;
+}
+.content .msg{
+  margin-left: -3rem;
+}
+.date{
+  color: #ccc;
+}
+.msg{
+  width: 205rpx;
+}
+.msg view:nth-child(2){
+  color: red;
+  margin: 0.3rem 0;
+  }
+.msg view:nth-child(3){
+  color: #ccc;
+}
+.date{
+  align-self: flex-end;
+}
+.delete image{
+  width:1rem;
+  height: 1rem;
+}
+.delete{
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

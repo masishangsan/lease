@@ -1,0 +1,144 @@
+<view class="indents item" >
+    <image src="../../img/indent.png"></image>
+    <view class="state">
+        <view>订单状态：<text>等待支付</text></view>
+        <view>订单号：{{toys.orderId}}</view>
+        <view>下单时间：{{address.create}}</view>
+    </view>
+</view>
+<view class="peome" >
+    <view class="tapeo">
+        <image src="../../img/dizhi.png"></image>
+        <view class="battle">
+            <view class="teshu">
+                <view>收货人：{{address.name}}</view>  
+                <view>{{address.phone}}</view>
+            </view>
+            <view>{{address.region+address.address}}</view>
+        </view>
+    </view>
+    <view class="tapeo">
+        <image src="../../img/shijian.png"></image>
+        <view class="battle">
+            <view>送货时间</view>
+            <view>{{toys.deliverTime}}</view>
+        </view>
+    </view>
+    <view class="tapeo">
+        <image src="../../img/rili2.png"></image>
+        <view class="battle">
+            <view>租期</view>
+            <view>{{toys.rentTime}}天</view>
+        </view>
+    </view>  
+</view> 
+<view class="money">
+    <view class="up">
+        <view>
+            <view>总租金/天</view>
+            <view>￥{{toys.rent}}</view>
+        </view>
+        <view>
+            <view>本单押金</view>
+            <view>￥{{toys.deposit}}</view>
+        </view>
+    </view>
+    
+    <view class="total">
+        <view>订单合计</view>
+        <view>￥{{toys.total}}</view>
+    </view>
+</view>  
+
+<view class="toylistt">
+    <view>玩具列表</view>
+    <view>{{average}}</view>
+</view>
+<view class="toylist">
+    <view class="indent">
+        <view class="wers">
+            <view class="good_mes" wx:for="{{toys.goods}}" wx:key="item">
+                <image src="{{item.img}}"></image>
+                <view class="nsa">
+                    <view>
+                        <view class="nam">{{item.name}}</view>
+                        <view class="sa">
+                            <view>{{item.goodsSpec}}</view>
+                            <view>适合年龄：{{item.fitAge}}</view>
+                        </view>
+                    </view>
+                    <view class="prnum">
+                        <view>{{item.rent}}元/天</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="tabar">
+    <view bindtap="back">回到首页</view>
+    <view>再租一次</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

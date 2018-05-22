@@ -1,0 +1,86 @@
+page{
+  background-color: #EBEBEB;
+  font-family: 微软雅黑;
+}
+.recharge{
+  padding:0 10rpx 30rpx;
+  background-color: #fff;
+}
+.up{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #fff;
+  height: 300rpx;
+  align-items: center;
+}
+.up view{
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #1E90FF;
+  text-align: center;
+  border: 1px solid #1E90FF;
+  border-radius: 10rpx;
+}
+.down{
+  width: 98%;
+  height: 80rpx;
+  border: 1px solid #EBEBEB;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.down input{
+  height: 100%;
+}
+
+.up .on{
+  background-color: #1E90FF;
+  color: #fff;
+}
+.btn{
+  width: 80%;
+  margin: 0 auto;
+  height: 80rpx;
+  background-color: #1E90FF;
+  color: #fff;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

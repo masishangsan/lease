@@ -1,0 +1,63 @@
+page{
+  background-color: #EBEBEB;
+  font-family: 微软雅黑;
+}
+.service view image{
+  width: 1.2rem;
+  height: 1.2rem;
+  
+}
+.call>image:nth-child(1) {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+.btn{
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: static;
+  background-color: #fff;
+  line-height: 4rem;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+button::after {
+  width:0%;
+  height:0%
+}
+.call{
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  line-height: 4rem;
+  align-items: center;
+}
+.call view{
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+}
+.service .call:nth-child(1) view{
+  width: 100%;
+}
+.service .call:nth-child(1) view button{
+  width: 100%;
+  text-align: left;
+}
+.call view:nth-child(1){
+  margin-left: 0.5rem;
+}
+.call view:nth-child(2){
+  margin-left: 1rem;
+}
+.service .call .jiantou{
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+
+
+
+

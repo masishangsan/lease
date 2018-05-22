@@ -1,0 +1,59 @@
+<view class="pay">
+  <view class="pay_n">
+    待支付：{{pay}}元
+  </view>
+  <view class="balance">
+  账户余额：{{balance}}元
+  </view>
+</view>
+<view class="details">
+  <view class="item">
+    <view>商品</view>
+    <view>押金/元</view>
+    <view>租金/元</view>
+    <view>租期/天</view>
+    <view>合计/元</view>
+  </view>
+  <view class="content" wx:for="{{good}}" wx:key="item">
+    <view>{{item.name}}</view>
+    <view>{{item.pledge}}</view>
+    <view>{{item.rent}}</view>
+    <view>{{item.term}}</view>
+    <view>{{item.total}}</view>
+  </view>
+  <view class="post">
+    <view>运费</view>
+    <view>{{post}}</view>
+  </view>
+</view>
+<view class="fang">支付方式</view>
+<view class="way">
+  <view>
+    <view>账户余额</view>
+    <image src="{{flag1?'../../img/weixuan.png':'../../img/yixuan.png'}}" bindtap="pay1"></image>
+  </view>
+  <view>
+    <view>微信支付</view>
+    <image src="{{flag2?'../../img/weixuan.png':'../../img/yixuan.png'}}" bindtap="pay2"></image>
+  </view>
+</view>
+<view class="btn" bindtap="pay">
+  支付
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

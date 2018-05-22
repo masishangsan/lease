@@ -1,0 +1,149 @@
+<view class="box">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" >  
+        <block wx:for="{{movies}}" wx:for-index="index" wx:key="item">  
+            <swiper-item bindtap="tode" data-index="{{index}}">
+              <image src="{{item}}" class="slide-image" mode="aspectFill" />  
+            </swiper-item>  
+        </block>  
+    </swiper>
+    <view class="good" >
+        <view class="first">
+            <view class="title">{{good.title}}</view>
+        </view>
+        <view class="price">{{good.price}}元/天</view>
+        <view class="drop">吊牌价：{{good.tagprice1}}元</view>
+        <view class="second">
+            <view class="left">
+                <view>{{good.size}}</view>
+                <view>适合年龄:{{good.age}}</view>
+            </view>
+            <view class="right">
+                <image src="../../img/gouwuche.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="ws">玩具参数</view>
+    <view class="message" >
+        <view class="list" >
+            <view class="row">
+                <view>玩具品牌</view>
+                <view>{{message.brand}}</view>
+            </view>
+            <view class="row">
+                <view>品牌所属</view>
+                <view>{{message.country}}</view>
+            </view>
+            <view class="row">
+                <view>玩具材质</view>
+                <view>{{message.texture}}</view>
+            </view>
+            <view class="row">
+                <view>玩具重量</view>
+                <view>{{message.weight}}</view>
+            </view>
+            <view class="row">
+                <view>包装规格</view>
+                <view>{{message.size}}</view>
+            </view>
+            <view class="row">
+                <view>消毒方式</view>
+                <view>{{message.disinfect}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="ws">锻炼能力</view>
+    <view class="message">
+        <view class="power" wx:for="{{power}}" wx:key="item">
+            <view class="row2">
+                <image src="../../img/zhua.png"></image>
+                <view>{{item.text}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="ws">玩具特色</view>
+    <view class="message">
+        <view class="power" wx:for="{{feature}}" wx:key="item">
+            <view class="row2">
+                <image src="../../img/zhua.png"></image>
+                <view>{{item.text}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="ws">玩具展示</view>
+    <view class="img">
+        <image src="{{item}}" wx:for="{{show}}" wx:key="item"></image>
+    </view>
+</view>
+
+<view class="to_cart">
+    <view >
+        <image src="../../img/gouwuche.png"></image>
+        <view>购物车</view>
+    </view>
+    <view bindtap="tocart" >测试</view>
+    <view bindtap="{{col?'toCart':'appointment'}}">{{huan}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

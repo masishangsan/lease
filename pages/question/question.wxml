@@ -1,0 +1,5 @@
+<view class="question">
+ 	<view class="title">帮您解答常见问题</view>
+ 	<view>{{text}}</view>
+</view>
+ 

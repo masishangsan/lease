@@ -1,0 +1,77 @@
+<view class="head">
+  <view class="image" style="background-image: url(../../img/vipcard.png);"></view>
+</view>
+<view class="scope" bindtap="to">
+    <view>
+        <view>配送范围</view>
+    </view>
+    <view>
+        <image src="../../img/jiantou.png"></image>
+    </view>
+</view>
+<view class="body">
+    <view class="vip" wx:for="{{vip}}" wx:key="{{item}}" style="background-image: url(../../img/vip-c.png);"
+    bindtap="tovip_de" data-index="{{index}}">  
+        <view class="left">
+            <view class="qixiian">{{item.validity}}天有效期</view>
+            <view class="cishu">{{item.times}}次玩具更换</view>
+        </view>
+        <view class="right">
+            <view class="up">
+                <view>￥{{item.current}}</view>
+                <view>原价￥{{item.original}}</view>
+            </view>
+            <view class="button">立即购买</view>
+        </view>
+    </view>
+</view>
+
+
+<!-- <view class="left">
+      <view class="limit"><text>{{item.validity}}天</text>有效期</view>
+      <view class="time"><text>{{item.times}}</text>次玩具更换</view>
+    </view>
+    <view class="right">
+      <view class="up">
+        <view>原价￥{{item.original}}</view>
+        <view>￥{{item.current}}</view>
+      </view>
+      <view class="down">
+        <view style="background-color:{{item.bcolor}}">立即购买</view>
+      </view>
+    </view> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

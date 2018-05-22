@@ -1,0 +1,197 @@
+page{
+  background-color: #EBEBEB;
+  font-family: 微软雅黑;
+}
+.vip_de{
+  display: flex;
+  background-color: #fff;
+  padding: 0.5rem 0.2rem;
+  border-bottom: 1px solid #EBEBEB;
+  align-items: center;
+}
+.vip_de:last-child{
+  padding-bottom:500rpx;
+}
+/*.vip_de:last-child{
+}*/
+.choice image{
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.good image{
+  width: 6.5rem;
+  height: 4.5rem;
+}
+.good{
+  display: flex;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  margin-right:50rpx;
+  /*width: 16rem;*/
+  flex:1;
+}
+.message{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1rem;
+  /*width: 11rem*/
+  width: 230rpx;
+}
+.message>view:nth-child(2){
+  color: #F5A623;
+  margin: 10rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+}
+.message>view:nth-child(1){
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #111111;
+}
+.sanda{
+  display: flex;
+  /*width: 5rem;*/
+  /*justify-content: space-between;*/
+}
+/*.sanda view{
+  font-size: 0.65rem;
+  padding: 0.1rem;
+  border: 1px solid #8A8A8A;
+}*/
+.sanda view:nth-child(1){
+  /*margin-top: 0.14rem;*/
+  margin-right:20rpx;
+}
+.sanda view{
+  border: 1px solid #000;
+  border-radius: 5rpx;
+  height: 1rem;
+  padding: 0.05rem;
+  box-sizing: border-box;
+  line-height: 0.7rem;
+}
+.delete image{
+  width: 1rem;
+  height: 1rem;
+  padding:20rpx;
+}
+.accounts{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  right: 0;
+  margin-top:100rpx;
+  height: 100rpx;
+}
+.left image{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 10rpx;
+}
+.accounts .msg{
+  background-color: #fff;
+  flex: 7
+}
+.accounts .btn{
+  background-color: #fed74b;
+  flex: 3
+}
+.msg{
+  display: flex;
+  padding: 20rpx 30rpx;
+  align-items: center;
+
+}
+.msg .left{
+  flex: 3;
+  display: flex;
+  font-size: 35rpx;
+  align-items: center;
+}
+.msg .right{
+  flex: 7;
+}
+.right view:nth-child(1){
+  font-size: 35rpx;
+}
+.right view:nth-child(2){
+  font-size: 28rpx;
+  color: #8A8A8A;
+}
+.btn{
+  font-size: 35rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

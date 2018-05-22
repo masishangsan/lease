@@ -1,0 +1,68 @@
+<view class="vip_de" wx:for="{{cart}}" wx:key="item" data-id="{{id}}">
+    <view class="choice" bindtap="choose" data-index="{{index}}">
+        <image src="{{item.choose?'../../img/weixuan.png':'../../img/yixuan.png'}}"></image>
+    </view>
+    <view class="good">
+        <view>
+           <image src="{{item.img}}"></image>
+        </view>
+        <view class="message">
+            <view>{{item.name}}</view>
+            <view>{{item.rent}}元/天</view>
+            <view class="sanda">
+                <view>{{item.goodsSpec}}</view>
+                <view>{{item.fitAge}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="delete" bindtap="delete" data-index="{{index}}">
+        <image src="../../img/delete.png"></image>
+    </view>
+</view>
+<view class="accounts">
+    <view class="msg">
+        <view class="left" bindtap="all">
+            <image src="{{all?'../../img/weixuan.png':'../../img/yixuan.png'}}"></image>
+            <view>全选</view>
+        </view>
+        <view class="right">
+            <view>
+                合计：{{accounts}}/元
+            </view>
+            <!-- <view>
+                满300元减30元邮费
+             </view> -->
+        </view>
+    </view>
+    <view class="btn" bindtap="toaccounts">
+        <view>
+            去结算（{{num}}）
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

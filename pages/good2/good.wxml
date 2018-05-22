@@ -1,0 +1,67 @@
+<view class="title">
+    <view class="text">全部商品</view>
+    <view class="t_r">
+        <view bindtap="screen_col">筛选</view>
+    </view>
+</view>
+<view class="category" >
+    <navigator url="../good_de/good_de?id={{item.id}}" wx:for="{{arr}}" wx:key="item">
+        <view>
+            <view style="background-image: url({{item.src}})" class="img"></view>
+            <view>{{item.goodname}}</view>
+            <view>{{item.price}}元/天</view>
+            <view>吊牌价：{{item.tagprice}}元</view>
+            <view class="bottom_good">
+                <view class="left">
+                    <view>{{item.size}}</view>
+                    <view>{{item.age}}</view>
+                </view>
+                <view class="right">
+                    <image src="../../img/gouwuche.png"></image>
+                </view>
+            </view>
+        </view>
+    </navigator> 
+</view>
+
+<!-- 筛选页面 -->
+<view class="screen" hidden="{{screen_k}}">
+    <view class="search_tab">
+        <view>
+            <image src="../../img/search.png"></image>
+        </view>
+        <view>玩具</view>
+        <view bindtap="closescreen">筛选</view>
+    </view>
+    <view class="screen_de">
+        <view class="brand" wx:for="{{filter}}" wx:key="item" data-index="index" >
+                <view class="head">
+                <view>
+                    <view>|</view>
+                    <view>{{item.display}}</view>
+                </view>
+                <view>
+                    <image src="{{item.jian?'../../img/up.png':'../../img/down.png'}}" bindtap="down" data-index="{{index}}"></image>
+                </view>
+            </view>
+
+            <view class="{{item.jian?'pull':'below'}}" >
+                <view class="{{item2.checked?'active':''}}" wx:for="{{item.arr}}" wx:key="item2" wx:for-item="item2" bindtap="select" data-index="{{index}}" data-indexs="{{index2}}" wx:for-index="index2">{{item2.name}}</view>
+            </view>  
+        </view>
+        <view class="affirm">
+            <view bindtap="reset">重置</view>
+            <view bindtap="ensure">确定</view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+

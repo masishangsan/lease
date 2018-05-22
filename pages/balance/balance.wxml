@@ -1,0 +1,23 @@
+<view class="head">
+  <view class="up">
+    <view>余额</view>
+    <view>{{pledge }}</view>
+  </view>
+  <view class="down">
+
+    <view class="recharge" bindtap="chongzhi">充值</view>
+    
+  </view>
+</view>
+<view class="zhangdan">
+  账单
+</view>
+<view class="consume" wx:for="{{consume}}" wx:key="item">
+  <view class="left1">
+    <view>{{item.type}}</view>
+    <view>{{item.date}}</view>
+  </view>
+  <view class="money">
+    {{item.money}}
+  </view>
+</view>

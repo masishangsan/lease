@@ -1,0 +1,80 @@
+<view class="top">
+  <view class="search">
+    <view>
+      <image src="../../img/search.png"></image>
+    </view>
+    <view>
+      <input placeholder="{{item.content}}" wx:for="{{placeholder}}" wx:key="item" value="{{hot}}"/>
+    </view>
+  </view>
+  <view bindtap="back">取消</view>
+</view>
+<view class="hot">
+  <view class="title">
+    <image src="../../img/hot.png"></image>
+    <view>热门搜索</view>
+  </view>
+  <view class="classify">
+    <view wx:for="{{classify}}" bindtap="replace" wx:key="item">{{item.name}}</view>
+  </view>
+  <!-- <view class="history">
+    <view class="action">
+      <view class="label">
+        <image src="../../img/history.png"></image>
+        <view>历史搜索</view>
+      </view>
+      <view class="delete">
+        <image src="../../img/clear.png"></image>
+        <view >清空</view>
+      </view>
+    </view>
+  </view> -->
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

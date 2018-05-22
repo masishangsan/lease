@@ -1,0 +1,49 @@
+<view class="body">
+    <view class="vip"  style="background-image: url(../../img/vip-c.png);"
+    bindtap="tovip_de" data-index="{{index}}">  
+        <view class="left">
+            <view class="qixiian">{{vip.validity}}天有效期</view>
+            <view class="cishu">{{vip.times}}次玩具更换</view>
+        </view>
+        <view class="right">
+            <view class="up">
+                <view>￥{{vip.current}}</view>
+                <view>原价￥{{vip.original}}</view>
+            </view>
+            <view class="button">立即购买</view>
+        </view>
+    </view>
+</view>
+<view class="power">
+    <image src="../../img/huiyuan.png"></image>
+    <view>会员特权</view>
+</view>
+<view class="powe_de">
+  <view class="box">
+    <image src="../../img/yunfei.png"></image>
+    <view class="p_ri">
+      <view>免费配送</view>
+      <view>北京地区免费配送，没测i取送玩具的地点须为同一地点</view>
+      <view>（六环外用户恕暂时无法提供会员服务）</view>
+    </view>
+  </view>
+  <view class="box">
+    <image src="../../img/yajin.png"></image>
+    <view class="p_ri">
+      <view>免押金，租金</view>
+      <view>会员有效期内玩具岁心跳，无租金和押金更省心</view>
+    </view>
+  </view>
+  <view class="box">
+    <image src="../../img/genghuan.png"></image>
+    <view class="p_ri">
+      <view>每次可更换3件玩具</view>
+      <view>每次可更换一大一中一小共三种玩具</view>
+      <view>（玩具详情页有具体标识）</view>
+    </view>
+  </view>
+</view>
+<view class="pay" bindtap="wxpay">
+  <view class="current">￥{{vip.current}}</view>
+  <view>立即支付</view>
+</view>

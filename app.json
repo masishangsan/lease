@@ -1,0 +1,135 @@
+{
+  "pages":[
+    "pages/index/index",
+    
+    "pages/delivery/delivery",
+    
+    "pages/accounts/accounts",
+
+
+    "pages/referral/referral",
+
+    
+    
+    
+    "pages/good2/good",
+    
+    
+    
+    
+    "pages/mine/mine",
+    
+    
+    "pages/balance/balance",
+    "pages/pledge/pledge",
+    
+    "pages/pledge_c/pledge_c",
+    "pages/about/about",
+    "pages/question/question",
+    
+    "pages/address/address",
+    "pages/address-1/address-1",
+    "pages/cart/cart",
+    
+    "pages/pay/pay",
+    
+    
+    
+    "pages/vip/vip",
+    
+    "pages/vip_de/vip_de",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    "pages/indent_de/indent_de",
+    
+    "pages/indent/indent",
+    
+    
+    
+    
+    "pages/relet/relet",
+    
+    
+    
+    
+    "pages/good_de/good_de",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    "pages/search_de/search_de",
+    
+    
+    
+    
+    
+    
+    "pages/fingerpost/fingerpost",
+    "pages/appointment/appointment",
+    "pages/service/service"
+    
+  ],
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#fed74b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./img/index.png",
+        "selectedIconPath": "./img/indexs.png"
+      },
+      {
+        "pagePath": "pages/indent/indent",
+        "text": "订单",
+        "iconPath": "./img/indent.png",
+        "selectedIconPath": "./img/indents.png"
+      },
+      {
+        "pagePath": "pages/vip/vip",
+        "text": "会员",
+        "iconPath": "./img/vip.png",
+        "selectedIconPath": "./img/vips.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "./img/cart.png",
+        "selectedIconPath": "./img/carts.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./img/mine.png",
+        "selectedIconPath": "./img/mines.png"
+      }
+    ],
+    "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#fff",
+      "navigationBarTitleText": "WeChat",
+      "navigationBarTextStyle": "black"
+    }
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#e7e7e7",
+    "navigationBarTitleText": "Wechat",
+    "navigationBarTextStyle":"black"
+  }
+}

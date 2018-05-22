@@ -1,0 +1,172 @@
+page{
+  background-color: #f9f9f9;
+  font-family: 微软雅黑;
+}
+.swiper {
+ height: 400rpx;
+ width: 100%;
+}
+.image{
+  width: 216rpx;
+  height: 180rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.swiper image {
+ height: 100%;
+ width: 100%;
+}
+.business{
+  width: 710rpx;
+  height: 214rpx;
+  margin:-60rpx auto 20rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+  border-radius: 8rpx;
+  box-shadow: 0 4px 6px 0 #F2F2F2;
+}
+.business image{
+  width: 3rem;
+  height: 3rem;
+}
+.business view{
+  font-size: 0.75rem;
+  color: #111111;
+}
+.item navigator view{
+  margin-top: 0.5rem;
+}
+.item{
+  flex: 1;
+  text-align: center;
+}
+.category{
+  background-color: #fff;
+  margin: 30rpx auto;
+  width: 710rpx;
+  /*height: 445rpx;*/
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 20rpx;
+}
+.head navigator {
+  display: flex;
+  font-size: 24rpx;
+  align-items: center;
+  color: #111111;
+  font-family: PingFangSC-Regular;
+}
+.head navigator image{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.title{
+  font-size: 30rpx;
+  font-family: PingFangSC-Medium;
+  color: #111;
+}
+.category .head view{
+  display: flex;
+}
+/*.head view view{
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+  margin-left: 0.5rem;
+}*/
+.body .good{
+   display: flex; 
+   justify-content: space-around; 
+
+}
+.body{
+    padding: 0 20rpx;
+}
+.good navigator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*flex: 1;*/
+  width: 33.3%
+}
+
+.good navigator:nth-child(2){
+   border:none; 
+   margin: 0 12rpx;
+}
+.good navigator view {
+  font-size: 0.7rem;
+  width: 100%;
+}
+.good navigator view view:nth-child(2){
+  margin-top: 16rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #111111;
+}
+.good navigator view view:nth-child(3){
+  color: #F5A623;
+  margin: 10rpx;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+}
+.good navigator view view:nth-child(4){
+  font-family: PingFangSC-Regular;
+  color: #9B9B9B;
+  font-size: 24rpx;
+  margin: 8rpx 0 30rpx;
+  text-align: center;
+}
+.body .good image{
+  width:216rpx;
+  height: 180rpx;
+  display: block;
+  margin: 0 auto;
+}
+.heads{
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+  height: 2.5rem;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+.heads view text{
+  color: #c1c1c1;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.heads view {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+}
+.heads view view{
+  margin-left: 0.5rem;
+}
+
+.bodys view image{
+  width: 100%;
+  height: 10rem;
+}
+.bodys view{
+  background-color: #fff;
+  padding: 0.5rem;
+}

@@ -1,0 +1,45 @@
+page{
+  font-family: 微软雅黑;
+  background-color: #fed74b;
+
+}
+.title{
+  color: #fff;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  text-align: center;
+  border-bottom: 1px solid #c1c1c1;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

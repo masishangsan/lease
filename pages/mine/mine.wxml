@@ -1,0 +1,88 @@
+<view class="user">
+  <view class="up">
+        <view class="left">
+            <image src="{{userhead}}"></image>
+            <view class="userm">
+                <view>{{username}}</view>
+            </view>
+        </view>
+  </view>
+  <view class="down">
+    <view class="recharge" bindtap="toC">
+      <view>{{recsum}}</view>
+      <view>充值</view>
+    </view>
+    <view class="pledge" bindtap="toY">
+      <view>{{plesum}}</view>
+      <view>押金</view>
+    </view>
+  </view> 
+</view>
+<view class="mine">
+  <navigator url="../address/address">
+    <view class="left1">
+      <image src="../../img/Addr.png"></image>
+      <view>收货地址</view>
+    </view>
+    <view class="right1">
+      <image src="../../img/youjiantou.png"></image>
+    </view>
+  </navigator>
+  <button open-type="share" class="share" style="border:0 ">
+    <view class="left1">
+      <image src="../../img/Invite.png"></image>
+      <view>邀请好友</view>
+    </view>
+    <view class="right1">
+      <image src="../../img/youjiantou.png"></image>
+    </view>
+  </button>
+  <navigator url="../question/question">
+    <view class="left1">
+      <image src="../../img/Problem.png"></image>
+      <view>常见问题</view>
+    </view>
+    <view class="right1">
+      <image src="../../img/youjiantou.png"></image>
+    </view>
+  </navigator>
+  <navigator url="../about/about">
+    <view class="left1">
+      <image src="../../img/About.png"></image>
+      <view>关于我们</view>
+    </view>
+    <view class="right1">
+      <image src="../../img/youjiantou.png"></image>
+    </view>
+  </navigator>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

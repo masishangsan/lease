@@ -1,0 +1,144 @@
+<!-- <view class="first">
+    <view class="good" wx:for="{{good}}" wx:key="item">
+        <view class="left">
+            <image src="{{item.img}}"></image>
+            <view>{{item.name}}</view>
+        </view>
+        <view class="right">
+            <view>{{item.rent}}元/天 </view>
+            <view>押金：{{item.foregift}}元</view>
+        </view>
+    </view>
+</view> -->
+<view class="first">
+    <view>使用会员卡结算的玩具</view>
+    <view class="good" wx:for="{{vipGoods}}" wx:key="item">
+        <view class="left">
+            <image src="{{item.img}}"></image>
+            <view>{{item.name}}</view>
+        </view>
+        <view class="right">
+            <view>{{item.rent}}元/天 </view>
+            <view>押金：{{item.foregift}}元</view>
+        </view>
+    </view>
+</view>
+
+<view class="first">
+    <view>普通结算的玩具</view>
+    <view class="good" wx:for="{{goods}}" wx:key="item">
+        <view class="left">
+            <image src="{{item.img}}"></image>
+            <view>{{item.name}}</view>
+        </view>
+        <view class="right">
+            <view>{{item.rent}}元/天 </view>
+            <view>押金：{{item.foregift}}元</view>
+        </view>
+    </view>
+</view>
+
+
+
+<view class="third">
+    <view class="tips1">
+        <view>时间设置</view>
+        <view>配送时间是指下单时间的第二天开始</view>
+    </view>
+    <view class="time">
+        <view>送货时间</view>
+        <view class="sas">
+            <picker mode="date" value="{{date}}" start="2015-09-01" end="2030-08-01" bindchange="bindDateChange">
+                <view class="picker">{{dates}}</view>
+            </picker>
+            <image src="../../img/rili.png"></image>
+        </view>
+    </view>
+    <view class="rent">
+        <view>租用时长</view>
+        <view class="sas">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">{{array[index]}}天（会员卡租赁忽略此项）</view>
+            </picker>
+            <image src="../../img/youjiantou.png"></image>
+        </view>
+    </view>
+</view>           
+<view class="address" bindtap="toAddress">
+    <view>配送地址</view>
+    <view>{{address.content}}</view>
+    <image src="../../img/youjiantou.png"></image>
+</view>
+<view class="note">
+    <textarea placeholder="备注留言" />
+</view>
+<view class="account">
+    <view class="total">
+        <view>合计：{{total}}元</view>
+        <view>押金：{{yajin}}元</view>
+    </view>
+    <view class="btn">
+        <view bindtap="toPay">确定</view>
+    </view>
+</view>
+<view class="dim" hidden="{{catch}}">
+    <view class="catch">
+        <view>选择使用会员卡租赁的玩具</view>
+        <view class="first">
+            <view class="tips">商品信息（VIP最多可租5件）</view>
+            <view class="good" wx:for="{{good}}" wx:key="item">
+                <view class="left">
+                    <image src="{{item.img}}"></image>
+                    <view>{{item.name}}</view>
+                </view>
+                <view class="select" bindtap="select" data-index="{{index}}">
+                    <image src="{{item.select?'../../img/yixuan.png':'../../img/weixuan.png'}}"></image>
+                </view>
+            </view>
+        </view>
+        <view class="sure" bindtap="sure">
+            确定
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

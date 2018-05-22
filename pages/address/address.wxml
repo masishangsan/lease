@@ -1,0 +1,28 @@
+<block wx:for="{{address}}" wx:key="item">
+  <view class="address">
+    <view class="head">
+      <text>{{item.name}}</text>
+      <text>{{item.telephone}}</text>
+    </view>
+    <view class="content">
+      {{item.content}}
+    </view>
+    <view class="default">
+      <view class="btn" bindtap="select" data-index="{{index}}">
+        <image src="{{item.flag?item.srcs:item.src}}"></image>
+        <text>设为默认</text>
+      </view>
+      <view class="btn" bindtap="shift" data-index="{{index}}">
+        <image src="../../img/delete.png"></image>
+        <text>删除</text>
+      </view>
+    </view>
+    
+  </view>
+  
+</block>
+<view class="add">
+  <navigator url="../address-1/address-1">
+    新增
+  </navigator>   
+</view>

@@ -1,0 +1,63 @@
+page{
+  background-color: #EBEBEB;
+  font-family: 微软雅黑;
+}
+.logo image{
+  width: 240rpx;
+  height: 240rpx;
+}
+.logo{
+  background-color: #fff;
+  height: 400rpx;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box image{
+  width: 1rem;
+  height: 1rem;
+}
+.box{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #ebebeb;
+}
+.box .left{
+  display: flex;
+  align-items: center;
+}
+.left image{
+  margin-right: 30rpx;
+}
+.introduce{
+  background-color: #fff;
+  font-size: 35rpx;
+  padding: 20rpx;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

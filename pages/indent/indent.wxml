@@ -1,0 +1,227 @@
+<view class="top">
+  <view wx:for="{{tab}}" class="{{item.checked?'on':''}}" wx:key="item" bindtap="change" data-index="{{index}}">{{item.name}}</view>
+</view>
+<view wx:if="{{tab[0].checked}}">
+    <view class="indent" wx:for="{{payOrder}}" wx:key="item">
+        <view class="ordernumber">
+            <view>订单号：{{item.orderId}}</view>
+        </view>
+        <view class="wers">
+            <view class="good_mes"wx:for="{{item.goods}}"
+            wx:for-item="item2" wx:for-index="index2" 
+            wx:key="item" bindtap="todetail" data-index="{{index}}" 
+            data-indexs="{{index2}}">
+                <image src="{{item2.img}}"></image>
+                <view class="nsa">
+                    <view>
+                        <view class="nam">{{item2.name}}</view>
+                        <view class="sa">
+                            <view>{{item2.goodsSpec}}</view>
+                            <view>适合年龄：{{item2.fitAge}}</view>
+                        </view>
+                    </view>
+                    <view class="prnum">
+                        <view>{{item2.rent}}元/天</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        
+        <view class="statistics">
+            <view>
+                共<text>{{item.count}}</text>件玩具
+            </view>
+            <view>
+                租期<text>{{item.rentTime}}</text>天
+            </view>
+        </view>
+        <view class="button">
+            <view bindtap="delete" data-index="{{index}}">取消订单</view>
+            <view bindtap="accpunts" bindtap="pay" data-index="{{index}}">立即付款</view>
+        </view>
+
+    </view>
+</view>
+<view wx:if="{{tab[1].checked}}" >
+    <view class="box">
+        <view class="vip"  hidden="{{order.viph}}">
+            <view>VIP在借</view>
+            <view>剩余{{residue}}次</view>
+        </view>
+        <view class="vip_de" wx:for="{{order.vip}}" wx:key="item">
+            <view class="choice" bindtap="choose" data-index="{{index}}">
+                <image src="{{item.choose?'../../img/weixuan.png':'../../img/yixuan.png'}}"></image>
+            </view>
+            <view class="good">
+                <!-- <view>
+                    <image src="{{item.goodsrc}}"></image>
+                </view> -->
+                <view style="background-image: url({{item.goodsrc}})" class="img"></view>
+                <view class="message">
+                    <view>{{item.name}}</view>
+                    <view>{{item.price}}元/天</view>
+                    <view>{{item.conment}}</view>
+                    <view class="sanda">
+                        <view>{{item.size}}</view>
+                        <view>{{item.age}}</view>
+                    </view>
+                </view>
+            </view>
+            
+        </view>
+        <view class="ordinary" hidden="{{order.ordh}}">
+            <view>普通在借</view>
+        </view>
+        <view class="ordinary_de" wx:for="{{order.ordinary}}" wx:key="item" >
+            <view class="choice" bindtap="choose2" data-index="{{index}}">
+                <image src="{{item.choose?'../../img/weixuan.png':'../../img/yixuan.png'}}"></image>
+            </view>
+            <view class="good">
+                <!-- <view>
+                    <image src="{{item.goodsrc}}"></image>
+                </view> -->
+                <view style="background-image: url({{item.goodsrc}})" class="img"></view>
+                <view class="message">
+                    <view>{{item.name}}</view>
+                    <view>{{item.price}}元/天</view>
+                    <view>{{item.conment}}</view>
+                    <view class="sandas">
+                        <view class="dds">
+                            <view>{{item.size}}</view>
+                            <view>{{item.age}}</view>
+                        </view>
+                        
+                    </view>
+                </view>
+            </view>
+            
+        </view>
+    </view>
+    
+    <view class="function">
+        <view class="vior-f f">
+            <!-- <view bindtap="relet">
+                <image src="../../img/xuzu.png"></image>
+                <text>续租</text>
+            </view> -->
+            <view bindtap="toChange">
+                <image src="../../img/diaohuan.png"></image>
+                <text>调换</text>
+            </view>
+            <view bindtap="toReturn">
+                <image src="../../img/guihuan.png"></image>
+                <text>归还</text>
+            </view>
+        </view> 
+    </view>
+</view>
+<view wx:if="{{tab[2].checked}}">
+    <view class="box">
+        <view class="viewq"></view>
+        <view class="vip_de" wx:for="{{overOrder.achieve}}" wx:key="item">
+            <view class="good">
+                <view>
+                    <image src="{{item.img}}"></image>
+                </view>
+                <view class="message">
+                    <view>{{item.name}}</view>
+                    <view>{{item.rent}}元/天</view>
+                    <view class="sanda">
+                        <view>{{item.goodsSpec}}</view>
+                        <view>{{item.fitAge}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>    
+</view>
+<view class="exchange" hidden="{{change}}">
+    <view class="content" >
+        <view class="boxz">
+            <view class="conbox" wx:for="{{cart_good}}" wx:key="item">
+                <view class="choice" bindtap="choose3" data-index="{{index}}">
+                    <image src="{{item.choose?'../../img/weixuan.png':'../../img/yixuan.png'}}"></image>
+                </view>
+                <view class="bex"> 
+                    <view class="left">
+                        <image src="{{item.img}}"></image>
+                        <view class="text">
+                            <view>{{item.name}}</view>
+                            <view>{{item.goodsSpec}}</view>
+                        </view>
+                    </view>
+                    <view class="right">
+                        <view>{{item.rent}}元/天</view>
+                        <view>押金：{{item.foregift}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <navigator url="../address/address">
+            <view class="address" bindtap="Saddrss">
+                <view>选择取货地址及信息</view>
+                <image src="../../img/youjiantou.png"></image>
+            </view>
+        </navigator>
+        <view class="time">
+            <view>送货时间</view>
+            <view class="sas">
+                <picker mode="date" value="{{date}}" start="2015-09-01" end="2030-08-01" bindchange="bindDateChange">
+                    <view class="picker">{{dates}}</view>
+                </picker>
+                <image src="../../img/rili.png"></image>
+            </view>
+        </view>
+        <view class="confrim">
+            <view bindtap="closeExchange">取消</view>
+            <view bindtap="Exchange">确定</view>
+        </view>
+    </view>
+</view>
+<view class="return" hidden="{{change2}}">
+    <view class="re_content">
+        <view>取货日期</view>
+        <view class="input">
+            <picker mode="date" value="{{date}}" start="2017-10-19" end="2030-10-19" bindchange="bindDateChanges">
+                <view>
+                    <input  value="{{date}}" disabled="{{true}}"/>
+                    <image src="../../img/rili.png"></image>
+                </view>
+            </picker> 
+        </view>
+        <navigator url="../address/address">
+            <view class="address" bindtap="Saddrss">
+                <view>选择取货地址及信息</view>
+                <image src="../../img/youjiantou.png"></image>
+            </view>
+        </navigator>
+        <view class="confrims">
+            <view bindtap="closeReturn">取消</view>
+            <view bindtap="return">确定</view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,12 @@
+<view class="recharge">
+  <view class="up"> 
+    <view wx:for="{{money}}" data-index="{{index}}"
+     bindtap="select" wx:key="item" class="{{item.sec?'on':''}}">{{item.mn}}</view>
+  </view>
+  <view class="down">
+    <input placeholder="自定义金额" type="number" value="{{value}}"/>
+  </view>
+</view>
+<view class="btn" bindtap="pay">
+  <view>支付</view> 
+</view>
